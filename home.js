@@ -1,8 +1,3 @@
-let person = {
-    name: "john",
-    age: 32,
-    partTime: false
-};
-person['age'] = 33;
-
-showMessage(person.age);
+const contaniers = document.getElementsByClassName('container');
+contaniers[3].classList.add('d-none');
+console.log(contaniers);

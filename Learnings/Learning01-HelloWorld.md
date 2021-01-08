@@ -1,9 +1,17 @@
 1. clone a repo to local
 2. get into cmd and into that folder
-3. run npm install to install Java. 
-4. npm install will check package.json and check ddevDependencies: and found            lite-server is required. 
+3. run npm install to install Java.
+4. npm install will check package.json and check ddevDependencies: and found            lite-server is required.
 5. start terminal and type npm run start
 We will work on html page (index.html)
+
+Error:
+code UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+solution:
+npm config set registry http://registry.npmjs.org/
+
+npm audit fix
+
 
 <script>
     // JavaScript code goes here...
@@ -12,20 +20,20 @@ We will work on html page (index.html)
 We will put JS before closing body type.
 </body>
 
-Its best to put Java script into own file rather than embedded HTML. 
-so it can be shared with multiple pages. 
+Its best to put Java script into own file rather than embedded HTML.
+so it can be shared with multiple pages.
 
 <script src="./filename.js"></script>
-# When you put JS at the end, it will be loaded after all html content loaded. 
-whitespace doesn't matter, but not recommened to put it. 
+# When you put JS at the end, it will be loaded after all html content loaded.
+whitespace doesn't matter, but not recommened to put it.
 
 You can use console.log("hi, Console..."); to putout into console (which is on website and right click to choose inspect and select console. )
-Java Script is case sensitive. 
+Java Script is case sensitive.
 
 comment code
-//Single line comment, it can be anywhere. 
+//Single line comment, it can be anywhere.
 
-/* 
+/*
     Multiple lines comment
 
 */
@@ -39,7 +47,7 @@ let total = 149.99;
 let product = 'Hiking Boots';
 let discounted = true;
 
-or 
+or
 // remember the whitespace doesn't count
 let welcome = 'Welcome',
      price = 49.99,
@@ -57,7 +65,7 @@ _, $ , letter
 Followed by Zero or More:
 _, $, letter, number
 
-suggest to use lower case camel notation 
+suggest to use lower case camel notation
 account (recommend)
 _account
 account_99
@@ -65,19 +73,19 @@ accountNumber (recommend)
 $accountNumber (not recommended as it can be used for automatically generated code)
 _123
 __proto__
-if you don't give value to variable, then the value is none but no error. 
+if you don't give value to variable, then the value is none but no error.
 You can see it in the console.log(price);
 
-Constant doesn't change. 
+Constant doesn't change.
 const priceCon = 22;
-it will generate typeerror if you try to assign value to constant. 
-if there is no initial value, then you will get syntax error as constant is not assigned value. 
+it will generate typeerror if you try to assign value to constant.
+if there is no initial value, then you will get syntax error as constant is not assigned value.
 
-try not to use var as keyword. 
+try not to use var as keyword.
 the difference between var and let:
 showMessage(price)
-let price = 25; // you will GET error and not get value. 
-if you use var price = 25; // you don't get value and  error. 
+let price = 25; // you will GET error and not get value.
+if you use var price = 25; // you don't get value and  error.
 
 
 show typeof
@@ -90,8 +98,8 @@ incremen
 ++price;
 price++;
 
-opeartion precedence (google it, high will run first) 
-Java 1.1+1.3 = 2.40000000000004 , so be careful on comparing. 
+opeartion precedence (google it, high will run first)
+Java 1.1+1.3 = 2.40000000000004 , so be careful on comparing.
 
 string:
 escape is \
@@ -121,11 +129,11 @@ boolean
 let saved = true;
 saved = !saved;
 
-null and undefined. 
-if you don't define a variable, you can see from console.log shows undefined. 
+null and undefined.
+if you don't define a variable, you can see from console.log shows undefined.
 but you can wipe out value as well,
 saved = null;
-but you get null not undefined. 
+but you get null not undefined.
 
 
 Object and Symbols
@@ -133,8 +141,8 @@ let person = {
     firstName: 'John',
     lastName: 'Adams'
 }
-so this is object with attributes. 
+so this is object with attributes.
 showMessage(person.firstName);
-It also has method which can run it's own code. 
+It also has method which can run it's own code.
 
 Symobols
